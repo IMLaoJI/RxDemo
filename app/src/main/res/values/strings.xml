@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RxJava2Demo</string>
+    <string name="chapter1">chapter1</string>
+    <string name="chapter2">chapter2</string>
+    <string name="chapter3">chapter3</string>
+</resources>
