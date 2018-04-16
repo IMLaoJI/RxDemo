@@ -6,6 +6,8 @@ import android.util.Log;
 import android.view.View;
 
 import com.nexusunsky.rxdemo.demo.ChapterOne;
+import com.nexusunsky.rxdemo.demo.ChapterThree;
+import com.nexusunsky.rxdemo.demo.ChapterTwo;
 
 import java.io.InterruptedIOException;
 
@@ -37,10 +39,10 @@ public class MainActivity extends Activity {
     }
 
     public void chapter2(View view) {
-
+        ChapterTwo.demo1();
     }
 
     public void chapter3(View view) {
-
+        ChapterThree.demo1();
     }
 }

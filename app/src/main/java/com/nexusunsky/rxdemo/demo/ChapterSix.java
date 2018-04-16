@@ -13,7 +13,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Predicate;
 import io.reactivex.schedulers.Schedulers;
 
-import static com.nexusunsky.rxjava2demo.MainActivity.TAG;
+import static com.nexusunsky.rxdemo.MainActivity.TAG;
 
 
 public class ChapterSix {

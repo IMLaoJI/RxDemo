@@ -9,7 +9,7 @@ import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 
-import static com.nexusunsky.rxjava2demo.MainActivity.TAG;
+import static com.nexusunsky.rxdemo.MainActivity.TAG;
 
 public class ChapterOne {
     public static void demo1() {

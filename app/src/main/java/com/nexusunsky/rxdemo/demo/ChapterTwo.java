@@ -4,8 +4,8 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.nexusunsky.rxjava2demo.Api;
-import com.nexusunsky.rxjava2demo.RetrofitProvider;
+import com.nexusunsky.rxdemo.Api;
+import com.nexusunsky.rxdemo.RetrofitProvider;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
@@ -16,7 +16,7 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
-import static com.nexusunsky.rxjava2demo.MainActivity.TAG;
+import static com.nexusunsky.rxdemo.MainActivity.TAG;
 
 
 

@@ -3,8 +3,8 @@ package com.nexusunsky.rxdemo.demo;
 import android.content.Context;
 import android.util.Log;
 
-import com.nexusunsky.rxjava2demo.Api;
-import com.nexusunsky.rxjava2demo.RetrofitProvider;
+import com.nexusunsky.rxdemo.Api;
+import com.nexusunsky.rxdemo.RetrofitProvider;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
@@ -12,8 +12,7 @@ import io.reactivex.schedulers.Schedulers;
 import okhttp3.ResponseBody;
 import retrofit2.Response;
 
-import static com.nexusunsky.rxjava2demo.MainActivity.TAG;
-
+import static com.nexusunsky.rxdemo.MainActivity.TAG;
 
 public class RetrofitDemo {
     public static void demo1(final Context context) {

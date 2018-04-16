@@ -2,8 +2,8 @@ package com.nexusunsky.rxdemo.demo;
 
 import android.util.Log;
 
-import com.nexusunsky.rxjava2demo.Api;
-import com.nexusunsky.rxjava2demo.RetrofitProvider;
+import com.nexusunsky.rxdemo.Api;
+import com.nexusunsky.rxdemo.RetrofitProvider;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
@@ -14,7 +14,7 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.BiFunction;
 import io.reactivex.schedulers.Schedulers;
 
-import static com.nexusunsky.rxjava2demo.MainActivity.TAG;
+import static com.nexusunsky.rxdemo.MainActivity.TAG;
 
 public class ChapterFour {
     public static void demo1() {

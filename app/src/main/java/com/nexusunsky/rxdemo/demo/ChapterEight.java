@@ -14,7 +14,7 @@ import io.reactivex.FlowableOnSubscribe;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
 
-import static com.nexusunsky.rxjava2demo.MainActivity.TAG;
+import static com.nexusunsky.rxdemo.MainActivity.TAG;
 
 public class ChapterEight {
     public static Subscription mSubscription;

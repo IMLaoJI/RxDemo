@@ -4,8 +4,8 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.nexusunsky.rxjava2demo.Api;
-import com.nexusunsky.rxjava2demo.RetrofitProvider;
+import com.nexusunsky.rxdemo.Api;
+import com.nexusunsky.rxdemo.RetrofitProvider;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,7 +19,8 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
-import static com.nexusunsky.rxjava2demo.MainActivity.TAG;
+
+import static com.nexusunsky.rxdemo.MainActivity.TAG;
 
 public class ChapterThree {
     public static void demo1() {
