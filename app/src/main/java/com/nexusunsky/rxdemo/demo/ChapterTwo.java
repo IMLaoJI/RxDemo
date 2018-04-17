@@ -6,6 +6,8 @@ import android.widget.Toast;
 
 import com.nexusunsky.rxdemo.Api;
 import com.nexusunsky.rxdemo.RetrofitProvider;
+import com.nexusunsky.rxdemo.entity.LoginRequest;
+import com.nexusunsky.rxdemo.entity.LoginResponse;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
@@ -105,16 +107,16 @@ public class ChapterTwo {
 
     public static void practice1(final Context context) {
         Api api = RetrofitProvider.get().create(Api.class);
-        api.login(new zlc.season.rxjava2demo.entity.LoginRequest())
+        api.login(new LoginRequest())
                 .subscribeOn(Schedulers.io())               //在IO线程进行网络请求
                 .observeOn(AndroidSchedulers.mainThread())  //回到主线程去处理请求结果
-                .subscribe(new Observer<zlc.season.rxjava2demo.entity.LoginResponse>() {
+                .subscribe(new Observer<LoginResponse>() {
                     @Override
                     public void onSubscribe(Disposable d) {
                     }
 
                     @Override
-                    public void onNext(zlc.season.rxjava2demo.entity.LoginResponse value) {
+                    public void onNext(LoginResponse value) {
                     }
 
                     @Override

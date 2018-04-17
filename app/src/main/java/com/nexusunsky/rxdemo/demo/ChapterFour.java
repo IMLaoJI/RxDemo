@@ -4,6 +4,11 @@ import android.util.Log;
 
 import com.nexusunsky.rxdemo.Api;
 import com.nexusunsky.rxdemo.RetrofitProvider;
+import com.nexusunsky.rxdemo.entity.UserBaseInfoRequest;
+import com.nexusunsky.rxdemo.entity.UserBaseInfoResponse;
+import com.nexusunsky.rxdemo.entity.UserExtraInfoRequest;
+import com.nexusunsky.rxdemo.entity.UserExtraInfoResponse;
+import com.nexusunsky.rxdemo.entity.UserInfo;
 
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
@@ -12,6 +17,7 @@ import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.BiFunction;
+import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 
 import static com.nexusunsky.rxdemo.MainActivity.TAG;
@@ -224,29 +230,23 @@ public class ChapterFour {
 
     public static void practice1() {
         final Api api = RetrofitProvider.get().create(Api.class);
-        Observable<zlc.season.rxjava2demo.entity.UserBaseInfoResponse> observable1 =
-                api.getUserBaseInfo(new zlc.season.rxjava2demo.entity.UserBaseInfoRequest()).subscribeOn(Schedulers
-                        .io());
+        Observable<UserBaseInfoResponse> observable1 =
+                api.getUserBaseInfo(new UserBaseInfoRequest()).subscribeOn(Schedulers.io());
 
-        Observable<zlc.season.rxjava2demo.entity.UserExtraInfoResponse> observable2 =
-                api.getUserExtraInfo(new zlc.season.rxjava2demo.entity.UserExtraInfoRequest()).subscribeOn(Schedulers
-                        .io());
+        Observable<UserExtraInfoResponse> observable2 =
+                api.getUserExtraInfo(new UserExtraInfoRequest()).subscribeOn(Schedulers.io());
 
         Observable.zip(observable1, observable2,
-                new BiFunction<zlc.season.rxjava2demo.entity.UserBaseInfoResponse, zlc.season.rxjava2demo.entity
-                        .UserExtraInfoResponse, zlc.season.rxjava2demo.entity.UserInfo>() {
+                new BiFunction<UserBaseInfoResponse, UserExtraInfoResponse, UserInfo>() {
                     @Override
-                    public zlc.season.rxjava2demo.entity.UserInfo apply(zlc.season.rxjava2demo.entity
-                                                                                .UserBaseInfoResponse baseInfo,
-                                                                        zlc.season.rxjava2demo.entity
-                                                                                .UserExtraInfoResponse extraInfo)
+                    public UserInfo apply(UserBaseInfoResponse baseInfo, UserExtraInfoResponse extraInfo)
                             throws Exception {
-                        return new zlc.season.rxjava2demo.entity.UserInfo(baseInfo, extraInfo);
+                        return new UserInfo(baseInfo, extraInfo);
                     }
                 }).observeOn(AndroidSchedulers.mainThread())
-                .subscribe(new Consumer<zlc.season.rxjava2demo.entity.UserInfo>() {
+                .subscribe(new Consumer<UserInfo>() {
                     @Override
-                    public void accept(zlc.season.rxjava2demo.entity.UserInfo userInfo) throws Exception {
+                    public void accept(UserInfo userInfo) throws Exception {
                         //do something;
                     }
                 });
