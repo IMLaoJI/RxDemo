@@ -23,6 +23,7 @@ public class ChapterOne {
                 emitter.onComplete();
             }
         });
+
         //创建一个下游 Observer
         Observer<Integer> observer = new Observer<Integer>() {
             @Override
@@ -45,7 +46,8 @@ public class ChapterOne {
                 Log.d(TAG, "complete");
             }
         };
-        //建立连接
+
+        //同步线程建立上游和下游的连接
         observable.subscribe(observer);
     }
 
