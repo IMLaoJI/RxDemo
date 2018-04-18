@@ -13,6 +13,12 @@
 
 package io.reactivex.annotations;
 
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
 /**
  * Indicates the backpressure support kind of the associated operator or class.
  * @since 2.0

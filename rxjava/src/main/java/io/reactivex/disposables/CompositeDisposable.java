@@ -12,6 +12,9 @@
  */
 package io.reactivex.disposables;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import io.reactivex.annotations.NonNull;
 import io.reactivex.exceptions.CompositeException;
 import io.reactivex.exceptions.Exceptions;
