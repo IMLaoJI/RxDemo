@@ -51,6 +51,7 @@ public class ChapterOne {
         observable.subscribe(observer);
     }
 
+    //展示链式调用
     public static void demo2() {
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override

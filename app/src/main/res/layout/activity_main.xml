@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout android:id="@+id/activity_main"
               xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
-              android:orientation="vertical"
-              android:paddingBottom="@dimen/activity_vertical_margin"
-              android:paddingLeft="@dimen/activity_horizontal_margin"
-              android:paddingRight="@dimen/activity_horizontal_margin"
-              android:paddingTop="@dimen/activity_vertical_margin"
-              tools:context="zlc.season.rxjava2demo.MainActivity">
+              android:orientation="vertical">
 
     <Button
         android:id="@+id/chapter1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="1dp"
         android:onClick="chapter1"
         android:text="@string/chapter1"/>
 
@@ -23,15 +17,63 @@
         android:id="@+id/chapter2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="91dp"
+        android:layout_marginTop="2dp"
         android:onClick="chapter2"
         android:text="@string/chapter2"/>
 
     <Button
-        android:id="@+id/start"
+        android:id="@+id/chapter3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="91dp"
+        android:layout_marginTop="3dp"
         android:onClick="chapter3"
         android:text="@string/chapter3"/>
+
+    <Button
+        android:id="@+id/chapter4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:onClick="chapter4"
+        android:text="@string/chapter4"/>
+
+    <Button
+        android:id="@+id/chapter5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:onClick="chapter5"
+        android:text="@string/chapter5"/>
+
+    <Button
+        android:id="@+id/chapter6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:onClick="chapter6"
+        android:text="@string/chapter6"/>
+
+    <Button
+        android:id="@+id/chapter7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:onClick="chapter7"
+        android:text="@string/chapter7"/>
+
+    <Button
+        android:id="@+id/chapter8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="chapter8"
+        android:text="@string/chapter8"/>
+
+    <Button
+        android:id="@+id/chapter9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:onClick="chapter9"
+        android:text="@string/chapter9"/>
 </LinearLayout>

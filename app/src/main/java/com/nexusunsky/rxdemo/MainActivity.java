@@ -5,7 +5,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import com.nexusunsky.rxdemo.demo.ChapterEight;
+import com.nexusunsky.rxdemo.demo.ChapterFive;
+import com.nexusunsky.rxdemo.demo.ChapterFour;
+import com.nexusunsky.rxdemo.demo.ChapterNine;
 import com.nexusunsky.rxdemo.demo.ChapterOne;
+import com.nexusunsky.rxdemo.demo.ChapterSeven;
+import com.nexusunsky.rxdemo.demo.ChapterSix;
 import com.nexusunsky.rxdemo.demo.ChapterThree;
 import com.nexusunsky.rxdemo.demo.ChapterTwo;
 
@@ -35,7 +41,7 @@ public class MainActivity extends Activity {
     }
 
     public void chapter1(View view) {
-        ChapterOne.demo1();
+        ChapterOne.demo4();
     }
 
     public void chapter2(View view) {
@@ -44,5 +50,29 @@ public class MainActivity extends Activity {
 
     public void chapter3(View view) {
         ChapterThree.demo1();
+    }
+
+    public void chapter4(View view) {
+        ChapterFour.demo1();
+    }
+
+    public void chapter5(View view) {
+        ChapterFive.demo1();
+    }
+
+    public void chapter6(View view) {
+        ChapterSix.demo1();
+    }
+
+    public void chapter7(View view) {
+        ChapterSeven.demo1();
+    }
+
+    public void chapter8(View view) {
+        ChapterEight.demo1();
+    }
+
+    public void chapter9(View view) {
+        ChapterNine.demo1();
     }
 }
